@@ -14,7 +14,7 @@ class CreateItemTagihanTable extends Migration
     public function up()
     {
         Schema::create('item_tagihan', function (Blueprint $table) {
-            $table->engine = "InnoDB";
+            $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('kode_item')->unique();
             $table->string('nama');
